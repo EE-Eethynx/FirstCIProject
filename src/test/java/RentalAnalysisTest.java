@@ -19,5 +19,13 @@ public class RentalAnalysisTest {
 	}
 	
 	//complete the remaining two test cases for Toyota
-	//...
+	@Test
+	public void testAveMonthlyRentalDurationToyota() {
+		assertEquals("Ave Monthly Rental Dur for Toyota", ra.aveMonthlyRentalDur("Toyota Wish", rList), 26.0, 0.0);
+	}
+
+	@Test
+	public void testtotalRevHonda() {
+		assertEquals("Total rev for Toyota", ra.totalRev("Toyota Wish", rList), 12160.0, 0.0);
+	}
 }
