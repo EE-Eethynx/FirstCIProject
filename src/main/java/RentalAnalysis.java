@@ -53,14 +53,69 @@ public class RentalAnalysis {
 	//complete this method
 	public double aveMonthlyRentalDur(String carModel, ArrayList<RentalRecord> rlist) {
 		
-		//... 
+		RentalRecord rr = new RentalRecord();
 		
+		if(carModel = "Honda Fit"){
+			
+			for (int i = 0; i < 6; i++)
+			{
+				rr = rlist.get(i)
+				int duration = rr.getDuration();
+				int totalDuration += duration;
+					
+			}
+			
+			double aveDuration = (double)totalDuration / 6;
+			
+		}
+		
+		if(carModel = "Toyota Wish"){
+			
+			for (int i = 6; i < 12; i++)
+			{
+				rr = rlist.get(i)
+				int duration = rr.getDuration();
+				int totalDuration += duration;
+					
+			}
+			
+			double aveDuration = (double)totalDuration / 6;
+			
+		}
+	
+		return aveDuration;
 	}
 	
 	//complete this method
 	public  double totalRev(String carModel, ArrayList<RentalRecord> rlist) {
 
-		//... 
+		RentalRecord rr = new RentalRecord();
+		
+		if(carModel = "Honda Fit"){
+			
+			for (int i = 0; i < 6; i++)
+			{
+				rr = rlist.get(i)
+				int duration = rr.getDuration();
+				int totalDuration += duration;
+					
+			}
+			
+			double aveDuration = (double)totalDuration / 6;
+		}
+		
+		if(carModel = "Toyota Wish"){
+			
+			for (int i = 6; i < 12; i++)
+			{
+				rr = rlist.get(i)
+				int duration = rr.getDuration();
+				int totalDuration += duration;
+					
+			}
+			
+			double aveDuration = (double)totalDuration / 6;
+		}
 		
 	}
 	
