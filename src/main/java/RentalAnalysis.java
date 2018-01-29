@@ -65,7 +65,9 @@ public class RentalAnalysis {
 					
 			}
 			
-			double aveDuration = (double)totalDuration / 6;
+			double aveHDuration = (double)totalDuration / 6;
+			
+			return aveHDuration;
 			
 		}
 		
@@ -79,11 +81,11 @@ public class RentalAnalysis {
 					
 			}
 			
-			double aveDuration = (double)totalDuration / 6;
-			
+			double aveTDuration = (double)totalDuration / 6;
+			return aveTDuration;
 		}
 	
-		return aveDuration;
+		
 	}
 	
 	//complete this method
@@ -96,12 +98,12 @@ public class RentalAnalysis {
 			for (int i = 0; i < 6; i++)
 			{
 				rr = rlist.get(i)
-				int duration = rr.getDuration();
-				int totalDuration += duration;
+				double revenue = rr.getRevenue();
+				double totalHRevenue += revenue;
 					
 			}
+			return totalHRevenue;
 			
-			double aveDuration = (double)totalDuration / 6;
 		}
 		
 		if(carModel = "Toyota Wish"){
@@ -109,13 +111,14 @@ public class RentalAnalysis {
 			for (int i = 6; i < 12; i++)
 			{
 				rr = rlist.get(i)
-				int duration = rr.getDuration();
-				int totalDuration += duration;
+				double revenue = rr.getRevenue();
+				double totalTRevenue += revenue;
 					
 			}
-			
-			double aveDuration = (double)totalDuration / 6;
+			return totalTRevenue;
+	
 		}
+		
 		
 	}
 	
